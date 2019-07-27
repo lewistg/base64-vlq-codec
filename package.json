@@ -1,15 +1,9 @@
 {
   "name": "base64-vlq-codec",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "build/src/index.js",
   "author": "Ty G. Lewis",
   "license": "MIT",
-  "dependencies": {
-    "@types/jasmine": "^3.3.14",
-    "gts": "^1.0.0",
-    "jasmine": "^3.4.0",
-    "typescript": "^3.5.2"
-  },
   "scripts": {
     "test": "jasmine",
     "check": "gts check",
@@ -22,6 +16,8 @@
   },
   "devDependencies": {
     "gts": "^1.0.0",
-    "typescript": "~3.4.0"
+    "typescript": "~3.4.0",
+    "jasmine": "^3.4.0",
+    "@types/jasmine": "^3.3.14"
   }
 }
