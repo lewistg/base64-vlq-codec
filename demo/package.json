@@ -1,0 +1,28 @@
+{
+  "name": "base64-vlq-codec-demo",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "base64-vlq-codec": "file:..",
+    "gts": "^1.0.0"
+  },
+  "devDependencies": {
+    "gts": "^1.0.0",
+    "http-server": "^0.11.1",
+    "rollup": "^1.17.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^3.5.3"
+  },
+  "scripts": {
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc -p .",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run check",
+    "bundle": "npx rollup -c rollup.config.js",
+    "serve": "npx http-server bin"
+  }
+}
