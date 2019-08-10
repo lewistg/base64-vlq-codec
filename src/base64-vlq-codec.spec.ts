@@ -36,6 +36,12 @@ describe('base64VlqEncode', () => {
   });
 });
 
+describe('base64VlqEncode', () => {
+  it('encodes a sequence of zeroes as base64 VLQs properly', () => {
+    expect(base64VlqEncode([0, 0, 0])).toEqual('AAA');
+  });
+});
+
 describe('base64Decode', () => {
   it('maps base64 alphabet to their corresponding sextet values', () => {
     expect(base64Decode('A/XCF')).toEqual([0, 63, 23, 2, 5]);

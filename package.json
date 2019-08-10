@@ -12,9 +12,10 @@
     "compile": "yarn compile:esm && yarn compile:node",
     "compile:esm": "tsc -p tsconfig.esm.json",
     "compile:node": "tsc -p tsconfig.json",
+    "compile:spec": "tsc -p tsconfig.spec.json",
     "fix": "gts fix",
     "prepare": "yarn run compile",
-    "pretest": "yarn run compile",
+    "pretest": "yarn run compile:spec",
     "posttest": "yarn run check"
   },
   "devDependencies": {

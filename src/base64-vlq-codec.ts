@@ -23,6 +23,9 @@ export function base64VlqEncode(integers: number[]): string {
 }
 
 export function vlqEncode(x: number): number[] {
+  if (x === 0) {
+    return [0];
+  }
   let absX = Math.abs(x);
   const sextets: number[] = [];
   while (absX > 0) {
