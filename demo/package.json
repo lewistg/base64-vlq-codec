@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "base64-vlq-codec": "file:..",
+    "@lewistg/base64-vlq-codec": "file:..",
     "gts": "^1.0.0"
   },
   "devDependencies": {

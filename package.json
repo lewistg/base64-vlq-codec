@@ -1,5 +1,5 @@
 {
-  "name": "base64-vlq-codec",
+  "name": "@lewistg/base64-vlq-codec",
   "version": "0.1.0",
   "main": "build/src/index.js",
   "module": "esm/src/index.js",
