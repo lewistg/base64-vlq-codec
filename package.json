@@ -2,6 +2,7 @@
   "name": "@lewistg/base64-vlq-codec",
   "version": "0.1.0",
   "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
   "module": "esm/src/index.js",
   "author": "Ty G. Lewis",
   "license": "MIT",
@@ -23,5 +24,9 @@
     "typescript": "~3.4.0",
     "jasmine": "^3.4.0",
     "@types/jasmine": "^3.3.14"
-  }
+  },
+  "files": [
+      "build",
+      "esm"
+  ]
 }
