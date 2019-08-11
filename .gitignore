@@ -1,0 +1,6 @@
+*.sw[a-z]
+node_modules
+esm
+build
+spec
+yarn-error.log
