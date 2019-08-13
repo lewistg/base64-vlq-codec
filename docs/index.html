@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+         display: flex;
+         font-family: monospace;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      .codec-app {
+         align-items: center;
+         display: flex;
+         flex-direction: column;
+         width: 500px;
+      }
+
+      @media only screen and (max-width: 600px) {
+         .codec-app {
+            width: 100%;
+         }
+      }
+
+      .main-content {
+        display: flex;
+        width: 100%;
+      }
+
+      .inputs {
+         display: flex;
+         flex-direction: column;
+         flex-grow: 1;
+      }
+
+      .input {
+         border: solid 1px black;
+         display: flex;
+         align-items: center;
+         font-family: monospace;
+         font-size: 18px;
+         padding: 5px;
+         position: relative;
+      }
+
+      .input.top {
+         border-bottom: none;
+      }
+
+      .input input {
+        border: none;
+        box-sizing: border-box;
+        font-family: monospace;
+        font-size: 18px; 
+        height: 24px;
+        width: 100%;
+      }
+
+      .input input:focus {
+         outline: none;
+         border-bottom: 1px solid black;
+         background-color: lightgray;
+      }
+
+      .label {
+         background-color: white;
+         font-family: monospace;
+         font-size: 12px;
+         line-height: 12px;
+         position: absolute;
+      }
+
+      .input.top .label {
+         top: -6px;
+         left: 5px;
+      }
+
+      .input.bottom .label {
+         bottom: -6px;
+         right: 5px;
+      }
+
+      #swap-encode-decode {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        justify-content: center;
+        cursor: pointer;
+        width: 26px;
+      }
+
+      #input-error {
+        align-self: start;
+        color: red;
+        margin-top: 5px;
+      }
+
+      #codec-button {
+        align-self: start;
+        background-color: white;
+        border: 1px solid black;
+        box-sizing: border-box;
+        font-size: 15px;
+        height: 30px;
+        margin-top: 20px;
+        padding: 5px;
+        width: calc(100% - 26px);
+      }
+
+      #codec-button:focus {
+         outline: none;
+      }
+
+      #codec-button:hover {
+        background-color: lightgray; 
+      }
+
+      #codec-button:active {
+        background-color: gray; 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="codec-app">
+      <h1>Base64 VLQ Encode/Decode</h1>
+      <div class="main-content">
+        <div class="inputs">
+          <div class="input top">
+            <div id="input-label" class="label">Integers</div>
+            <input id="input" type="text">
+          </div>
+          <div class="input bottom">
+            <div id="output-label" class="label">Base64 VLQs</div>
+            <input id="output" readonly type="text">
+          </div>
+        </div>
+        <div id="swap-encode-decode" role="button" title="Swap decode/encode">⮁</div>
+      </div>
+      <div id="input-error"></div>
+      <button id="codec-button">Encode</button>
+    </div>
+    <script type="text/javascript" src="./app-bundle.js"></script>
+  </body>
+</html>

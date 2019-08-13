@@ -2,7 +2,7 @@
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
     "rootDir": ".",
-    "outDir": "esm",
+    "outDir": "dist/esm",
     "module": "es2015",
     "target": "es5"
   },
