@@ -76,7 +76,7 @@ export function splitVlqs(vlqs: number[]): number[][] {
     }
   });
   if (vlq.length > 0) {
-    throw new Error('Malformed VLQ sequence: The last VlQ never ended.');
+    throw new Error('Malformed VLQ sequence: The last VLQ never ended.');
   }
   return splitVlqs;
 }
