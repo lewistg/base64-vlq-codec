@@ -1,6 +1,10 @@
 {
   "name": "@lewistg/base64-vlq-codec",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lewistg/base64-vlq-codec"
+  },
   "main": "dist/cjs/src/index.js",
   "types": "dist/cjs/src/index.d.ts",
   "module": "dist/esm/src/index.js",
